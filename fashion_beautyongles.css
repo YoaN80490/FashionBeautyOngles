@@ -1,0 +1,84 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rajdhani:wght@500&family=Roboto&display=swap');
+
+.logo_nav img{
+    width: 32px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+header{
+    background: url(/photo/banner.jpg);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: calc(0.5rem +1.5vw);
+    background-color: rgba(255, 255, 255, 0.500);
+    width: 98%;
+    z-index: 50;
+    text-align: center;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+#icons{
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 650px){
+    #icons{
+        display: block;
+    }
+    #icons:before {
+        content: "\2630" ;
+    }
+
+    .active #icons:before {
+        content: "\2715";
+    }
+
+    nav ul{
+        position: fixed;
+        left: -100%;
+        top: 52px;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.500);
+        width: 100%;
+        transition: 0.25s;
+        height: 300px;
+        justify-content: space-around !important;
+    }
+    nav li{
+        padding: 3px, 0;
+        margin-left: 10px;
+    }
+    nav li:hover{
+        background-color: white !important;
+    }
+    nav.active ul{
+        left: 0;
+    }
+    nav{
+        position: fixed;
+    }
+}
