@@ -17,7 +17,7 @@ li{
     list-style: none;
 }
 header{
-    background: url(/photo/banner.jpg);
+    background: url(photo/banner.jpg);
     height: 350px;
     background-repeat: no-repeat;
     background-position: right;
@@ -32,7 +32,6 @@ nav{
     background-color: rgba(255, 255, 255, 0.500);
     width: 98%;
     z-index: 50;
-    text-align: center;
 }
 nav ul{
     display: flex;
@@ -71,9 +70,6 @@ nav ul{
     nav li{
         padding: 3px, 0;
         margin-left: 10px;
-    }
-    nav li:hover{
-        background-color: white !important;
     }
     nav.active ul{
         left: 0;
