@@ -27,6 +27,8 @@ a{
 li{
     list-style: none;
 }
+
+
 header{
     background: url(photo/banniere.jpg);
     height: 350px;
@@ -51,7 +53,7 @@ nav ul{
     width: 60%;
 }
 .menu a:hover{
-    color: var(--main-purpleh);
+    color: var(--main-purple);
 }
 #icons{
     cursor: pointer;
