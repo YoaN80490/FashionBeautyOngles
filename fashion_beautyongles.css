@@ -140,6 +140,9 @@ footer{
 .contenu section{
     margin-top: 50px;
 }
+p{
+    font-size: calc(11px + 0.5vw);
+}
 
 /* slider */
 
@@ -219,13 +222,10 @@ h3{
     justify-content: space-around;
     text-align: center;
 }
-.lien_prestation p{
-    font-size: calc(11px + 0.5vw);
-}
+
 .who p{
     margin: 20px;
     text-align: center;
-    font-size: calc(11px + 0.5vw);
 }
 
 
@@ -250,4 +250,78 @@ h3{
     .end_accueil img{
         width: calc(650px + 5vw);
     }
+}
+
+/*    CONTACT    */
+
+
+.info_contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_contact i{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.info_contact div{
+    margin-top: 30px;
+}
+.info_contact p{
+    display: flex;
+    justify-content: center;
+}
+
+.horaire div{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/*    FORMATION    */
+
+.presta .infos{
+    display: none;
+}
+.switch .infos{
+    display: flex !important;
+    border-bottom: solid 1px;
+
+}
+
+.presta .formation{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.plus{
+    background-color: var(--main-gray);
+    border-left: 2px solid;
+    border-top: 2px solid;
+    padding: 3px;
+}
+
+.bouton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bouton div{
+    width: max-content;
+    background-color: var(--main-purple);
+    border-left: 2px solid;
+    border-top: 2px solid;
+    padding: 5px;
+    font-size: calc(15px + 0.5vw);
+}
+
+.bouton a{
+    color: var(--main-white);
+    font-weight: bold;
 }
