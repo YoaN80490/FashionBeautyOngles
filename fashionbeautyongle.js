@@ -12,31 +12,11 @@ links.forEach((link) => {
 
 });
 
-cate1plus1.addEventListener("click", () => {
-    cate1presta1.classList.toggle("switch")
-})
-
-cate1plus2.addEventListener("click", () => {
-    cate1presta2.classList.toggle("switch")
-})
-
-cate1plus3.addEventListener("click", () => {
-    cate1presta3.classList.toggle("switch")
-})
-
-cate1plus4.addEventListener("click", () => {
-    cate1presta4.classList.toggle("switch")
-})
-
-plus2.addEventListener("click", () => {
-    presta2.classList.toggle("switch")
-})
-
-plus2.addEventListener("click", () => {
-    presta2.classList.toggle("switch")
-})
-
-plus2.addEventListener("click", () => {
-    presta2.classList.toggle("switch")
-})
-
+const change = (int) => {
+    if ($('#infos'+int).is(':visible')) {
+        $('#infos'+int).hide();
+    }
+    else {
+        $('#infos'+int).show();
+    }
+}
